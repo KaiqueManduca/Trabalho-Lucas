@@ -8,6 +8,12 @@ package observer;
  *
  * @author Kaique
  */
-public class UIObserver {
+public class UIObserver implements Observer {
     
+    @Override
+    public void atualizar(int quantidade) {
+        // Código para atualizar a interface do usuário
+        System.out.println("UI atualizada com a quantidade: " + quantidade);
+    }
 }
+

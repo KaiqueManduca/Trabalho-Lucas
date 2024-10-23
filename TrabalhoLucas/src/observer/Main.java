@@ -9,5 +9,18 @@ package observer;
  * @author Kaique
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        Estoque estoque = new Estoque();
+
+        Observer ui = new UIObserver();
+        Observer db = new DBObserver();
+        Observer relatorio = new RelatorioObserver();
+
+        estoque.addObservador(ui);
+        estoque.addObservador(db);
+        estoque.addObservador(relatorio);
+
+        estoque.setQuantidade(100);
+    }
 }
+

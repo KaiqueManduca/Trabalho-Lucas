@@ -8,6 +8,6 @@ package observer;
  *
  * @author Kaique
  */
-public class Observer {
-    
+public interface Observer {
+    void atualizar(int quantidade);
 }

@@ -8,6 +8,10 @@ package observer;
  *
  * @author Kaique
  */
-public class RelatorioObserver {
-    
+public class RelatorioObserver implements Observer {
+    @Override
+    public void atualizar(int quantidade) {
+        // Código para gerar relatório
+        System.out.println("Relatório gerado com a quantidade: " + quantidade);
+    }
 }

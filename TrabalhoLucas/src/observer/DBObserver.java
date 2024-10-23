@@ -8,6 +8,10 @@ package observer;
  *
  * @author Kaique
  */
-public class DBObserver {
-    
+public class DBObserver implements Observer {
+    @Override
+    public void atualizar(int quantidade) {
+        // Código para atualizar o banco de dados
+        System.out.println("Banco de Dados atualizado com a quantidade: " + quantidade);
+    }
 }
